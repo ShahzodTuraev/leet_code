@@ -1,7 +1,7 @@
-let numRescueBoats = function (people, limit) {
-  let count = 0,
-    i = 0,
-    j = people.length - 1;
+let numRescueBoats = function (people: number[], limit: number): number {
+  let count: number = 0,
+    i: number = 0,
+    j: number = people.length - 1;
   people.sort(function (a, b) {
     return a - b;
   });
