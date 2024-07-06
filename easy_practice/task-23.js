@@ -1,15 +1,16 @@
-// 2582. Pass the Pillow
-function passThePillow(n, time) {
-  const lastPoint = n - 1;
-  const direction = Math.floor(time / (n - 1));
-  // if direction is add number direction is opposite else right direction
-  let order;
-  if (direction % 2 == 0) {
-    order = (time % (n - 1)) + 1;
-  } else {
-    order = n - (time % (n - 1));
+// 14. Longest Common Prefix
+function longestCommonPrefix(strs) {
+  if (!strs.length) return "";
+
+  for (let i = 0; i <= strs[0].length; i++) {
+    for (let j = 1; j < strs.length; j++) {
+      if (strs[0][i] !== strs[j][i]) {
+        return strs[0].slice(0, i);
+      }
+    }
   }
-  return order;
+
+  return strs[0];
 }
 
-console.log(passThePillow(4, 7));
+console.log(longestCommonPrefix(["flower", "flow", "flight"]));
