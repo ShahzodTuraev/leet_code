@@ -39,4 +39,4 @@ function titleToNumber(columnTitle) {
   return number;
 }
 
-console.log(titleToNumber("A"));
+console.log(titleToNumber("DGR"));
