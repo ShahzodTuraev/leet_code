@@ -1,5 +1,12 @@
 // 3498. Reverse Degree of a String
 function reverseDegree(s) {
+  // for generating alphabet
+  // let alphabet = new Map()
+  // let value = 26
+  // let total = 0
+  // for (let i = 97; i <= 122; i++) {
+  //     alphabet.set(String.fromCharCode(i), value--);
+  // }
   const letters = [
     "a",
     "b",
